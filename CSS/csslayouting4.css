@@ -1,0 +1,82 @@
+.container {
+	width: 600px;
+	border: 1px solid black;
+	margin: auto;
+	padding: 5px;
+	/*mengakali float dengan overflow*/
+	/*overflow: auto;*/
+}
+/*text wrapping*/
+/*img {
+	float: left;
+	margin: 5px;
+}*/
+
+/*menghapus float menggunakan div kosong dan properti clear*/
+/*.clear {
+	clear: left;
+}*/
+
+/*image gallery*/
+/*.kotak {
+	width: 80px;
+	height: 80px;
+	background-color: salmon;
+	color: black;
+	text-align: center;
+	line-height: 80px;
+	font-size: 20px;
+	margin: 5px;
+	float: left;
+}*/
+
+/*multi-column layout*/
+
+.container2 {
+	width: 800px;
+	border: 1px solid black;
+	margin: auto;
+	padding: 5px;
+}
+
+.kiri {
+	width: 150px;
+	height: 500px;
+	background-color: red;
+	float: left;
+}
+
+.tengah {
+	width: 500px;
+	height: 500px;
+	background-color: green;
+	float: left;
+}
+
+.kanan {
+	width: 150px;
+	height: 500px;
+	background-color: blue;
+	float: left;
+}
+
+/*menghapus float menggunakan div kosong dan properti clear*/
+/*.clear {
+	clear: left;
+}*/
+
+
+/*menghapus float menggunakan source code dibawah ini*/
+.cf:before, 
+.cf:after {
+	content: " ";/* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
